@@ -28,7 +28,7 @@ class Agent:
     def select_action(self, state):
         state = torch.from_numpy(state).float()
         probabilities = self.policy_network(state)
-        probabilities = probabilities.detach().numpy()  # Convert to numpy array
+        probabilities = probabilities.detach().numpy()  
         action = np.random.choice(np.arange(self.output_size), p=probabilities)
         return action
 
