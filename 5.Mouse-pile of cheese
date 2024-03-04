@@ -4,8 +4,8 @@ n_rows, n_cols = 3, 4
 grid_world = np.zeros((n_rows, n_cols))
 
 rewards = {
-    (0, 3): 10,   # Cheese state
-    (1, 3): -10,  # Penalty state
+    (0, 3): 10,   
+    (1, 3): -10, 
 }
 
 gamma = 0.9
