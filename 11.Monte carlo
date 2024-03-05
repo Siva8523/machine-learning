@@ -3,9 +3,9 @@ import random
 
 class CustomEnv:
     def __init__(self):
-        self.num_states = 20
+        self.num_states = 10
         self.actions = ['left', 'right']
-        self.max_steps = 200
+        self.max_steps = 100
         self.current_state = 0
         self.reward = 0
         self.total_reward = 0
@@ -74,4 +74,3 @@ Q, optimal_policy = monte_carlo_control(env)
 print("Learned Optimal Policy:")
 for state, action in optimal_policy.items():
     print(f"State: {state}, Action: {action}")
-
